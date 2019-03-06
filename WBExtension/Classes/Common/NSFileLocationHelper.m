@@ -8,6 +8,7 @@
 
 #import "NSFileLocationHelper.h"
 #import <sys/stat.h>
+#import "WBConfig.h"
 
 #define RDVideo    (@"video")
 #define RDImage    (@"image")
@@ -64,7 +65,7 @@
 {
     NSString *documentPath = [NSFileLocationHelper getAppDocumentPath];
     //todo：这里的手机号是否是唯一必须设置的？
-    NSString *userID = USER.mobile;
+    NSString *userID = @"TODO:userid";
     if ([userID length] == 0)
     {
         DebugLog(@"Error: Get User Directory While UserID Is Empty");

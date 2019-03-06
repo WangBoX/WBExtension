@@ -9,6 +9,7 @@
 #import "WBCamera.h"
 #import <Photos/PHPhotoLibrary.h>
 #import <AssetsLibrary/ALAssetsLibrary.h>
+#import "WBConfig.h"
 
 
 

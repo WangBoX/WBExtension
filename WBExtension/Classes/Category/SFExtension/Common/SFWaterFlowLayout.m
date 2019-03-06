@@ -7,6 +7,7 @@
 //
 
 #import "SFWaterFlowLayout.h"
+#import "WBConfig.h"
 
 /** 列数 */
 static const NSInteger defaultColCount = 3;

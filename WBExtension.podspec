@@ -30,6 +30,11 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
+  s.dependency 'FMDB'
+  s.dependency 'Masonry'
+  s.dependency 'YYCache'
+  s.dependency 'YYText' 
+
   s.source_files = 'WBExtension/Classes/**/*'
   
   # s.resource_bundles = {

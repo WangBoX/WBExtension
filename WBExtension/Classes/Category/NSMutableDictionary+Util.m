@@ -7,6 +7,7 @@
 //
 
 #import "NSMutableDictionary+Util.h"
+#import "NSObject+Common.h"
 
 @implementation NSMutableDictionary (Util)
 

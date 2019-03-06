@@ -7,6 +7,7 @@
 //
 
 #import "NSString+Common.h"
+#import "WBConfig.h"
 
 @implementation NSString (Common)
 

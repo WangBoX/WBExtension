@@ -10,9 +10,11 @@
 #import "NSObject+Common.h"
 #import <CommonCrypto/CommonCrypto.h>
 #import "MBProgressHUD.h"
-#import "AppDelegate.h"
-#import <Masonry.h>
-#import "ZJLinkViewController.h"
+#import "Masonry.h"
+#import "WBConfig.h"
+#import <objc/runtime.h>
+
+//#import "ZJLinkViewController.h"
 
 
 static NSString *hudStr = @"tmpHUD";
@@ -131,9 +133,9 @@ static NSString *hudStr = @"tmpHUD";
 }
 
 #pragma mark BaseURL
-+ (NSString *)baseURLStr{
-    return MainUrl;
-}
+//+ (NSString *)baseURLStr{
+//    return MainUrl;
+//}
 
 #pragma mark -带图标提示
 + (void)showSuccessWithTip:(NSString *)tip {
@@ -343,7 +345,7 @@ static NSString *hudStr = @"tmpHUD";
     return YES;
 }
 
-
+/*
 #pragma mark Net  Error
 - (ZJNetResponse *)handleResponse:(id)responseJSON autoShowError:(BOOL)autoShowError{
     ZJNetResponse *response = [ZJNetResponse mj_objectWithKeyValues:responseJSON];
@@ -413,7 +415,7 @@ static NSString *hudStr = @"tmpHUD";
             //未进行实名认证
             [self gotoRealNameCertify];
             break;
-            */
+            *
         default:
             
             if (autoShowError) {
@@ -438,6 +440,7 @@ static NSString *hudStr = @"tmpHUD";
     ZJLinkViewController *link = [[ZJLinkViewController alloc] initWithUrl:url];
     [rootController.navigationController pushViewController:link animated:YES];
 }
+*/
 
 //获取一个随机整数，范围在[from,to]，包括from，包括to
 -(int)getRandomNumber:(NSUInteger)from to:(NSUInteger)to{

@@ -8,6 +8,9 @@
 
 #import "UIImage+SFExtension.h"
 #import <Accelerate/Accelerate.h>
+#import "WBConfig.h"
+
+
 @implementation UIImage (SFExtension)
 #pragma mark -
 #pragma mark - 控件截图
@@ -79,7 +82,7 @@
     centerImageView.image = centerImage;
     centerImageView.layer.borderWidth = 3; // 默认边框宽度
     centerImageView.layer.cornerRadius = 20;// 默认圆角半径
-    centerImageView.layer.borderColor = kMainDeepGrayColor.CGColor;//默认边框颜色
+    centerImageView.layer.borderColor = [UIColor lightTextColor].CGColor;//默认边框颜色
     centerImageView.layer.masksToBounds = YES;
     [imageView addSubview:centerImageView];
     return imageView;

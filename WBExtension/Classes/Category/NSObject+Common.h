@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Reachability.h"
-#import "ZJNetResponse.h"
+//#import "ZJNetResponse.h"
 
 @interface NSObject (Common)
 
@@ -133,8 +133,8 @@
 -(int)getRandomNumber:(NSUInteger)from to:(NSUInteger)to;
 
 #pragma mark Net  Error
-- (ZJNetResponse *)handleResponse:(id)responseJSON autoShowError:(BOOL)autoShowError;//网络response，code非0时，错误处理
-- (ZJNetResponse *)handleNetFail:(NSError *)error;
+//- (ZJNetResponse *)handleResponse:(id)responseJSON autoShowError:(BOOL)autoShowError;//网络response，code非0时，错误处理
+//- (ZJNetResponse *)handleNetFail:(NSError *)error;
 
 #pragma mark - 跳转业务
 - (void)gotoH5:(NSString *)url;

@@ -8,6 +8,11 @@
 
 #import "ToolObject.h"
 #import "UIAlertView+SFExtension.h"
+#import "NSObject+Common.h"
+#import "WBConfig.h"
+
+@import YYText;
+
 @implementation ToolObject
 
 
