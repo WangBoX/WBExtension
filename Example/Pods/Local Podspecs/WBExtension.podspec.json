@@ -18,5 +18,19 @@
   "platforms": {
     "ios": "8.0"
   },
+  "dependencies": {
+    "FMDB": [
+
+    ],
+    "Masonry": [
+
+    ],
+    "YYCache": [
+
+    ],
+    "YYText": [
+
+    ]
+  },
   "source_files": "WBExtension/Classes/**/*"
 }

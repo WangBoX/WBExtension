@@ -1,0 +1,6 @@
+framework module WBExtension {
+  umbrella header "WBExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
