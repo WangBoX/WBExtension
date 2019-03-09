@@ -8,6 +8,24 @@
 #ifndef WBConfig_h
 #define WBConfig_h
 
+//#define DEV 1 //发布模式，注释掉
+#ifdef DEV
+/**************************** 测试模式 ****************************/
+#define MainUrl @"http://api.dev.moongood.net:8082/mapi?"     //网络请求地址
+#define URLUpimg @"http://api.dev.moongood.net:8082/upimg"        //上传图片地址
+#define URLUploadCerImg @"http://api.dev.moongood.net:8082/upload"  //上传鉴定证书
+
+
+#else
+
+/**************************** 正式模式 ****************************/
+//#import "SafeKit.h"
+#define MainUrl @"https://api.moongood.com/mapi?"     //网络请求地址
+#define URLUpimg @"https://api.moongood.com/upimg"        //上传图片地址
+#define URLUploadCerImg @"https://api.moongood.com/upload"  //上传鉴定证书
+
+#endif
+
 
 #ifdef DEBUG
 #define DebugLog(format, ...) NSLog((@"调试：[函数名:%s]" "[行号:%d]\n" format), __FUNCTION__, __LINE__, ##__VA_ARGS__);
@@ -147,6 +165,7 @@ _Pragma("clang diagnostic pop") \
 } while (0)
 
 /**************************** Color ****************************/
+#import "UIColor+Chameleon.h"
 #define kMainDeepGrayColor [UIColor colorWithHexString:@"6b6358"]
 #define kMainLightGrayColor [UIColor colorWithHexString:@"a8a6a2"]
 #define kMainbackgroundColor [UIColor colorWithHexString:@"F5F6F7"]//背景色
