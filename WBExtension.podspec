@@ -20,6 +20,7 @@ TODO: Add long description of the pod here.
   s.dependency 'Masonry'
   s.dependency 'YYCache'
   s.dependency 'YYText' 
+  s.dependency 'SDWebImage', '3.8.0'
 
   s.source_files = 'WBExtension/Classes/**/*'
   

@@ -8,6 +8,9 @@
 #ifndef WBConfig_h
 #define WBConfig_h
 
+
+typedef void(^MGCommonBlock)(void);
+
 //#define DEV 1 //发布模式，注释掉
 #ifdef DEV
 /**************************** 测试模式 ****************************/
@@ -146,6 +149,7 @@ _Pragma("clang diagnostic pop") \
 #define kStatusBarHeight (isX ? 40 : 20)
 #define kPidding                     20.f
 #define kMargin                      10.f
+#define k15Pidding                   15.f
 #define kNAVBAR_HEIGHT               (isX? 88 : 44)
 #define kTABVBAR_HEIGHT               (isX? 83 : 49)
 /**************************** iPhoneX & iOS 11****************************/
@@ -169,17 +173,21 @@ _Pragma("clang diagnostic pop") \
 #define kMainDeepGrayColor [UIColor colorWithHexString:@"6b6358"]
 #define kMainLightGrayColor [UIColor colorWithHexString:@"a8a6a2"]
 #define kMainbackgroundColor [UIColor colorWithHexString:@"F5F6F7"]//背景色
+#define kMainNavColor [UIColor colorWithHexString:@"01B4FD"]//主导航栏背景色
 #define kLayerBorderColor [UIColor colorWithHexString:@"eaeaea"]//描边背景色
+#define kMainBlueColor [UIColor colorWithHexString:@"01B4FD"]//主题蓝色
 #define kMainRedColor [UIColor colorWithHexString:@"c40000"]//主题红色
 #define kBlackColr [UIColor colorWithHexString:@"333333"]//黑色
-#define kDesTextColr [UIColor colorWithHexString:@"7d828a"]//描述文字颜色
+#define kDesTextColr [UIColor colorWithHexString:@"9C9C9C"]//描述文字颜色
 
 #define kLineColor  [UIColor colorWithHexString:@"eaeaea"]//分割线灰色
 #define kCellPressColor  [UIColor colorWithHexString:@"fafafa"]//点击的灰色效果颜色
 
 /**************************** 设备相关 ****************************/
+#import "WBCoreDevice.h"
+
 #define IOS8            ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 8.0)
-#define isX ([UIScreen mainScreen].bounds.size.height == 812)
+#define isX [WBCoreDevice isIPhoneXSeries]
 
 #define kDevice_Is_iPhone5s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
 #define kDevice_Is_iPhone6s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
