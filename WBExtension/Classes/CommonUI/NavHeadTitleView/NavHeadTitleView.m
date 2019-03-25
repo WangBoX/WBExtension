@@ -26,7 +26,7 @@
         self.leftBtn.backgroundColor=[UIColor clearColor];
         self.leftBtn.frame=CGRectMake(0, (isX ? 30 : 20),  kLeftBtnW, frame.size.height-20);
         [self.leftBtn addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
-        [self.leftBtn setImage:[UIImage imageNamed:@"home_nav_ return_icon"] forState:UIControlStateNormal];
+        [self.leftBtn setImage:[UIImage imageNamed:@"nav_choose"] forState:UIControlStateNormal];
         [self addSubview:self.leftBtn];
         
         self.backgroundColor=[UIColor clearColor];
@@ -42,6 +42,7 @@
         
         self.rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         self.rightBtn.backgroundColor = [UIColor clearColor];
+        [self.leftBtn setImage:[UIImage imageNamed:@"nav_scan"] forState:UIControlStateNormal];
         self.rightBtn.frame = CGRectMake(self.frame.size.width-kRightBtnW, (isX ? 30 : 20), kRightBtnW, frame.size.height-20);
         [self.rightBtn addTarget:self action:@selector(rightBtnClick) forControlEvents:UIControlEventTouchUpInside];
         

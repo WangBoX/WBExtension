@@ -150,11 +150,11 @@ _Pragma("clang diagnostic pop") \
 #define kPidding                     20.f
 #define kMargin                      10.f
 #define k15Pidding                   15.f
-#define kNAVBAR_HEIGHT               (isX? 88 : 44)
+#define kNAVBAR_HEIGHT               (isX? 88 : 64)
 #define kTABVBAR_HEIGHT               (isX? 83 : 49)
 /**************************** iPhoneX & iOS 11****************************/
-#define SafeAreaTopHeight (kSCREEN_HEIGHT == 812.0 ? 88 : 64)
-#define SafeAreaBottomHeight (kSCREEN_WIDTH == 812.0 ? 44 : 0)
+#define SafeAreaTopHeight (isX ? 88 : 64)
+#define SafeAreaBottomHeight (isX ? 44 : 0)
 
 #define  AdjustsScrollViewInsets_NO(scrollView,vc)\
 do { \
@@ -176,7 +176,6 @@ _Pragma("clang diagnostic pop") \
 #define kMainNavColor [UIColor colorWithHexString:@"01B4FD"]//主导航栏背景色
 #define kLayerBorderColor [UIColor colorWithHexString:@"eaeaea"]//描边背景色
 #define kMainBlueColor [UIColor colorWithHexString:@"01B4FD"]//主题蓝色
-#define kMainRedColor [UIColor colorWithHexString:@"c40000"]//主题红色
 #define kBlackColr [UIColor colorWithHexString:@"333333"]//黑色
 #define kDesTextColr [UIColor colorWithHexString:@"9C9C9C"]//描述文字颜色
 
