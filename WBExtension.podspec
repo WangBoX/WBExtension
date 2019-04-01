@@ -21,11 +21,15 @@ TODO: Add long description of the pod here.
   s.dependency 'YYCache'
   s.dependency 'YYText' 
   s.dependency 'SDWebImage', '3.8.0'
+  #扫码库
+  s.dependency 'LBXScan/LBXZXing','2.3'
+  s.dependency 'LBXScan/UI','2.3'
 
   s.source_files = 'WBExtension/Classes/**/*'
-  
+  s.resource     = 'WBExtension/WBExtension.bundle'
+
   # s.resource_bundles = {
-  #   'WBExtension' => ['WBExtension/Assets/*.png']
+  #   'WBExtension' => ['WBExtension/Assets/*.bundle']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

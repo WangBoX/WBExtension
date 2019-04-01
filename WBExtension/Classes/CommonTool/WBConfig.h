@@ -10,11 +10,14 @@
 
 
 typedef void(^MGCommonBlock)(void);
+#import "NSObject+Common.h"
+#import "NSBundle+WBExtension.h"
+#import "UIView+Frame.h"
 
-//#define DEV 1 //发布模式，注释掉
+#define DEV 1 //发布模式，注释掉
 #ifdef DEV
 /**************************** 测试模式 ****************************/
-#define MainUrl @"http://api.dev.moongood.net:8082/mapi?"     //网络请求地址
+#define MainUrl @"http://47.100.64.82:8091/mapi?"     //网络请求地址
 #define URLUpimg @"http://api.dev.moongood.net:8082/upimg"        //上传图片地址
 #define URLUploadCerImg @"http://api.dev.moongood.net:8082/upload"  //上传鉴定证书
 
@@ -23,7 +26,7 @@ typedef void(^MGCommonBlock)(void);
 
 /**************************** 正式模式 ****************************/
 //#import "SafeKit.h"
-#define MainUrl @"https://api.moongood.com/mapi?"     //网络请求地址
+#define MainUrl @"http://47.100.64.82:8091/mapi?"     //网络请求地址
 #define URLUpimg @"https://api.moongood.com/upimg"        //上传图片地址
 #define URLUploadCerImg @"https://api.moongood.com/upload"  //上传鉴定证书
 

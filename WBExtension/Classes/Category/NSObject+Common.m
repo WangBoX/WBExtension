@@ -380,8 +380,8 @@ static NSString *hudStr = @"tmpHUD";
             }
             break;
         case error_reLogin:
-            [DataBase delUser];
-            [DataBase delSeller];
+            [QJDataBase delUser];
+            [QJDataBase delSeller];
             [(AppDelegate *)[UIApplication sharedApplication].delegate setupLoginControllerComplete:^{
                 nil;
             }];
@@ -399,8 +399,8 @@ static NSString *hudStr = @"tmpHUD";
         }break;
         /* todo:全部多状态码处理
         case error_logout:
-            [DataBase delUser];
-            [DataBase delSeller];
+            [QJDataBase delUser];
+            [QJDataBase delSeller];
             [(AppDelegate *)[UIApplication sharedApplication].delegate setupLoginController];
             break;
         
