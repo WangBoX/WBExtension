@@ -20,7 +20,9 @@ TODO: Add long description of the pod here.
   s.dependency 'Masonry'
   s.dependency 'YYCache'
   s.dependency 'YYText' 
+  s.dependency 'MJRefresh' 
   s.dependency 'SDWebImage', '3.8.0'
+
   #扫码库
   s.dependency 'LBXScan/LBXZXing','2.3'
   s.dependency 'LBXScan/UI','2.3'

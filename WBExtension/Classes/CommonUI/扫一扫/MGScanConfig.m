@@ -37,7 +37,7 @@
     style.anmiationStyle = LBXScanViewAnimationStyle_LineMove;
     
     //线条上下移动图片
-    style.animationImage = [NSBundle WB_image:@"qrcode_scan_light_green"];
+    style.animationImage = [NSBundle WB_image:@"qrcode_scan_light_green@3x"];
     
     style.notRecoginitonArea = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
     
